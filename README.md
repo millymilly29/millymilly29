@@ -8,7 +8,7 @@
   <a href="https://millymilly29.github.io"><img src="https://img.shields.io/badge/portfolio-millymilly29.github.io-080806?style=flat-square&labelColor=161616" alt="Portfolio"></a>
   <img src="https://img.shields.io/badge/focus-autonomous--systems%20%7C%20realtime--ai-080806?style=flat-square&labelColor=161616" alt="Focus">
   <img src="https://img.shields.io/badge/architecture-zero--dependency-080806?style=flat-square&labelColor=161616" alt="Architecture">
-  <a href="https://t.me/millyrock29"><img src="https://img.shields.io/badge/telegram-%40millyrock29-080806?style=flat-square&labelColor=161616" alt="Telegram"></a>
+  <a href="https://t.me/therealfullmetal"><img src="https://img.shields.io/badge/telegram-%40therealfullmetal-080806?style=flat-square&labelColor=161616" alt="Telegram"></a>
 </p>
 
 ---
@@ -59,5 +59,5 @@ SWARM-OPERATOR │ Event Loop Latency: <1ms              │ Test Suite: 18/18 P
 ### Contact & Connect
 
 - **Portfolio:** [millymilly29.github.io](https://millymilly29.github.io)
-- **Telegram:** [@millyrock29](https://t.me/millyrock29)
+- **Telegram:** [@therealfullmetal](https://t.me/therealfullmetal)
 - **Email:** [millyrock2900@gmail.com](mailto:millyrock2900@gmail.com)
