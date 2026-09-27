@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Maison Margiela × Yeezy Software Archive — Kirill Tsyganov" width="100%">
+  <img src="assets/hero.png" alt="Maison Margiela × Yeezy Software Archive — Kirill Tsyganov" width="100%">
 </div>
 
 ```
