@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/cover.svg" alt="Kirill Tsyganov — Maison Margiela / Yeezy Archival Specification" width="100%">
+</div>
+
 ```
 KIRILL TSYGANOV
 SYSTEMS / IN-MEMORY ENGINES / REALTIME RUNTIMES
