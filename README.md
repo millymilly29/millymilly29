@@ -32,7 +32,7 @@ I build **low-latency AI infrastructure** — vector engines, voice pipelines, a
 
 **[`synapse`](https://github.com/millymilly29/synapse)**  
 In-process vector database with HNSW skip-graph, SQ8 quantization, and hybrid BM25/RRF retrieval.  
-`<0.6ms P50` · `3,900 QPS` · `17/17 tests`
+`<0.6ms P50` · `97.2% Recall@10` · `17/17 tests`
 
 </td>
 </tr>
@@ -41,30 +41,30 @@ In-process vector database with HNSW skip-graph, SQ8 quantization, and hybrid BM
 
 **[`subsecond`](https://github.com/millymilly29/subsecond)**  
 Voice streaming engine with speculative intent prefetching and zero-buffer barge-in cancellation.  
-`235ms E2E` · `<2ms cutoff` · `15/15 tests`
+`235ms E2E` · `<0.1ms cutoff` · `15/15 tests`
 
 </td>
 <td width="50%" valign="top">
 
 **[`agent-firewall`](https://github.com/millymilly29/agent-firewall)**  
-AST-level command sandbox for autonomous agents — intercepts exploits before kernel dispatch.  
-`10 threat classes` · `SHA-256 sealed` · `15/15 tests`
+Command pattern firewall & dry-run safety gateway for autonomous AI agent tool execution.  
+`10 threat rules` · `SHA-256 audit` · `9/9 tests`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[`swarm-operator`](https://github.com/millymilly29/swarm-operator)**  
-Event-driven multi-agent mission control with DAG orchestration and live token telemetry.  
-`4-agent swarm` · `<1ms bus` · `18/18 tests`
+**[`columnarjs`](https://github.com/millymilly29/columnarjs)**  
+In-process columnar analytics engine with TypedArray storage and vectorized GROUP BY aggregation.  
+`1M rows in 4ms` · `zero-dependency` · `28/28 tests`
 
 </td>
 <td width="50%" valign="top">
 
-**[`operatorflow`](https://github.com/millymilly29/operatorflow)**  
-Visual no-code automation builder with a real DAG execution engine. No backend, no APIs.  
-`DAG engine` · `zero-dependency`
+**[`swarm-operator`](https://github.com/millymilly29/swarm-operator)**  
+Event-driven multi-agent mission control with DAG orchestration and live token telemetry.  
+`4-agent swarm` · `<1ms bus` · `18/18 tests`
 
 </td>
 </tr>
@@ -78,8 +78,8 @@ Visual no-code automation builder with a real DAG execution engine. No backend, 
 Languages    TypeScript  JavaScript  Python  Bash
 Runtimes     Node.js v24  Web Audio API  V8
 AI / LLM     Gemini 2.0 / 1.5 Pro  Claude 3.7 Sonnet
-Algorithms   HNSW  BM25  RRF  SQ8  Speculative Decoding
-Security     AST Lexer  SHA-256 Attestation  Zero-Trust
+Algorithms   HNSW  BM25  RRF  SQ8  Speculative Decoding  Columnar
+Security     Command Pattern Gateway  SHA-256 Audit Chain  Dry-Run Sandbox
 ```
 
 ---
