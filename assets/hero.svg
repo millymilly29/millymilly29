@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      .bone-bg { fill: #F2F0EB; }
+      .carbon-text { fill: #1A1917; }
+      .ash-text { fill: #8A867D; }
+      .headline {
+        font-family: 'Archivo Black', 'Helvetica Neue', 'Arial Narrow', sans-serif;
+        font-size: 78px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        transform: scaleY(1.15);
+      }
+      .mono-label {
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .tag-box {
+        stroke: #1A1917;
+        stroke-width: 1px;
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+
+  <!-- Flat bone background (no texture, no gradient) -->
+  <rect width="1600" height="400" class="bone-bg"/>
+
+  <!-- Top Border Framing / Margiela Seam Line -->
+  <line x1="80" y1="40" x2="1520" y2="40" stroke="#C8C5BE" stroke-width="1"/>
+
+  <!-- Margiela Collection Tag: N° 23 (Top Right Corner) -->
+  <g transform="translate(1380, 70)">
+    <!-- 2px hard offset shadow -->
+    <rect x="2" y="2" width="140" height="42" fill="#1A1917"/>
+    <rect x="0" y="0" width="140" height="42" class="tag-box"/>
+    <text x="70" y="26" class="mono-label carbon-text" font-weight="700" text-anchor="middle">N° 23</text>
+  </g>
+
+  <!-- Asymmetric Off-Center Headline -->
+  <g transform="translate(80, 190)">
+    <text x="0" y="0" class="headline carbon-text">SOFTWARE ARCHIVE</text>
+    
+    <!-- Monospace Care Label Subtext -->
+    <text x="4" y="65" class="mono-label ash-text">
+      KIRILL TSYGANOV &nbsp;·&nbsp; ENGINEERING OBJECTS &nbsp;·&nbsp; COLLECTION 2026
+    </text>
+  </g>
+
+  <!-- Bottom Coordinates & Deconstructed Open Corner Brackets -->
+  <g transform="translate(80, 340)">
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#C8C5BE" stroke-width="1"/>
+    <text x="0" y="30" class="mono-label ash-text" font-size="11px">
+      SYSTEMS &nbsp;/&nbsp; IN-MEMORY ENGINES &nbsp;/&nbsp; LOW-LATENCY RUNTIMES &nbsp;·&nbsp; ZERO FRAMEWORKS
+    </text>
+    <text x="1440" y="30" class="mono-label ash-text" font-size="11px" text-anchor="end">
+      SPEC: 100% UNBLEACHED CODE
+    </text>
+  </g>
+</svg>
