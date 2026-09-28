@@ -45,7 +45,7 @@
     
     <!-- Monospace Care Label Subtext -->
     <text x="4" y="60" class="mono-label ash-text" font-size="14px">
-      KIRILL TSYGANOV &nbsp;·&nbsp; ENGINEERING OBJECTS &nbsp;·&nbsp; COLLECTION 2026
+      KIRILL TSYGANOV · ENGINEERING OBJECTS · COLLECTION 2026
     </text>
   </g>
 
@@ -53,7 +53,7 @@
   <g transform="translate(80, 340)">
     <line x1="0" y1="0" x2="1440" y2="0" stroke="#C8C5BE" stroke-width="1"/>
     <text x="0" y="30" class="mono-label ash-text" font-size="12px">
-      SYSTEMS &nbsp;/&nbsp; IN-MEMORY ENGINES &nbsp;/&nbsp; LOW-LATENCY RUNTIMES &nbsp;·&nbsp; ZERO FRAMEWORKS
+      SYSTEMS / IN-MEMORY ENGINES / LOW-LATENCY RUNTIMES · ZERO FRAMEWORKS
     </text>
     <text x="1440" y="30" class="mono-label ash-text" font-size="12px" text-anchor="end">
       SPEC: 100% UNBLEACHED CODE
