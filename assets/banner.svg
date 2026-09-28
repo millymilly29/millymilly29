@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400">
+  <defs>
+    <style>
+      .bone-bg { fill: #F2F0EB; }
+      .carbon-text { fill: #1A1917; }
+      .ash-text { fill: #8A867D; }
+      .headline {
+        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial Narrow', 'Impact', sans-serif;
+        font-size: 88px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+      }
+      .mono-label {
+        font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .tag-box {
+        stroke: #1A1917;
+        stroke-width: 1px;
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+
+  <!-- Flat bone background (no texture, no gradient) -->
+  <rect width="1600" height="400" class="bone-bg"/>
+
+  <!-- Top Border Framing / Margiela Seam Line -->
+  <line x1="80" y1="40" x2="1520" y2="40" stroke="#C8C5BE" stroke-width="1"/>
+
+  <!-- Margiela Collection Tag: N° 23 (Top Right Corner) -->
+  <g transform="translate(1360, 70)">
+    <!-- 2px hard offset shadow -->
+    <rect x="2" y="2" width="160" height="42" fill="#1A1917"/>
+    <rect x="0" y="0" width="160" height="42" class="tag-box"/>
+    <text x="80" y="27" class="mono-label carbon-text" font-weight="700" text-anchor="middle" font-size="14px">N° 23 — ARCHIVE</text>
+  </g>
+
+  <!-- Asymmetric Off-Center Headline -->
+  <g transform="translate(80, 195)">
+    <text x="0" y="0" class="headline carbon-text">SOFTWARE ARCHIVE</text>
+    
+    <!-- Monospace Care Label Subtext -->
+    <text x="4" y="60" class="mono-label ash-text" font-size="14px">
+      KIRILL TSYGANOV · ENGINEERING OBJECTS · COLLECTION 2026
+    </text>
+  </g>
+
+  <!-- Bottom Coordinates & Deconstructed Open Corner Brackets -->
+  <g transform="translate(80, 340)">
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#C8C5BE" stroke-width="1"/>
+    <text x="0" y="30" class="mono-label ash-text" font-size="12px">
+      SYSTEMS / IN-MEMORY ENGINES / LOW-LATENCY RUNTIMES · ZERO FRAMEWORKS
+    </text>
+    <text x="1440" y="30" class="mono-label ash-text" font-size="12px" text-anchor="end">
+      SPEC: 100% UNBLEACHED CODE
+    </text>
+  </g>
+</svg>
