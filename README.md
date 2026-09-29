@@ -41,6 +41,8 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 19` | **N8N-CRM-INTAKE** | n8n / HubSpot / Gemini / Qdrant | **5/5 triage pass** · HITL webhook approval · Promise guardrail | [**View Code →**](https://github.com/therealfullmetal55555/n8n-crm-intake-hubspot) |
 | `N° 20` | **N8N-QDRANT-RAG** | n8n / Qdrant / Gemini / Docker | **Closed-book RAG** · Mandatory citation diffing · Refusal protocol | [**View Code →**](https://github.com/therealfullmetal55555/n8n-qdrant-rag-assistant) |
 | `N° 21` | **N8N-RESEARCH-AGENT** | n8n / Tavily / Gemini / ReAct | **8-call hard budget** · SSRF-safe fetcher · Citation truth guard | [**View Code →**](https://github.com/therealfullmetal55555/n8n-autonomous-research-agent) |
+| `N° 22` | **PREMIERE-FLOW-PRO** | CEP 11.0 / ExtendScript / PPRO | **27+ timeline automation modules** · BeatGrid BPM · Ken Burns | [**View Code →**](https://github.com/therealfullmetal55555/premiere-flow-pro) |
+| `N° 23` | **INDUSTRIAL-LOFI-PS** | CEP 12.0 / ScriptUI / Photoshop | **29+ ActionDescriptor FX recipes** · Thermal heatmap · Halftone · Noir | [**View Code →**](https://github.com/therealfullmetal55555/industrial-lofi-ps) |
 
 ---
 
