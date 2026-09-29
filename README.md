@@ -38,6 +38,9 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 16` | **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate · State machine | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
 | `N° 17` | **TELEGRAM-RAG-SCRAPER** | Python / Telethon / ChromaDB / RAG | **Enterprise channel scraper** · 100% vector citation engine | [**View Code →**](https://github.com/therealfullmetal55555/telegram-rag-scraper) |
 | `N° 18` | **SMART-INBOX-AGENT** | n8n / FastAPI / Groq / Vision | **Zero-touch inbox triage** · Math-verified invoice parsing -> Sheets | [**View Code →**](https://github.com/therealfullmetal55555/smart-inbox-agent) |
+| `N° 19` | **N8N-CRM-INTAKE** | n8n / HubSpot / Gemini / Qdrant | **5/5 triage pass** · HITL webhook approval · Promise guardrail | [**View Code →**](https://github.com/therealfullmetal55555/n8n-crm-intake-hubspot) |
+| `N° 20` | **N8N-QDRANT-RAG** | n8n / Qdrant / Gemini / Docker | **Closed-book RAG** · Mandatory citation diffing · Refusal protocol | [**View Code →**](https://github.com/therealfullmetal55555/n8n-qdrant-rag-assistant) |
+| `N° 21` | **N8N-RESEARCH-AGENT** | n8n / Tavily / Gemini / ReAct | **8-call hard budget** · SSRF-safe fetcher · Citation truth guard | [**View Code →**](https://github.com/therealfullmetal55555/n8n-autonomous-research-agent) |
 
 ---
 
