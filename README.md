@@ -35,6 +35,9 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 13` | **AGENT-FIREWALL** | Node / AST Command Scanner | Deterministic dry-run safety gateway · **SHA-256 audit chain** | [**View Code →**](https://github.com/therealfullmetal55555/agent-firewall) |
 | `N° 14` | **SYNAPSE** | Node / Browser JS (Zero-Dep) | `0.245ms P50` in-memory HNSW vector database · `99.1% Recall` | [**View Code →**](https://github.com/therealfullmetal55555/synapse) |
 | `N° 15` | **CASE-STUDIES** | Python / APScheduler / Sheets | E-commerce automation · **~77% time reduction (~27h/mo)** | [**View Details →**](https://github.com/therealfullmetal55555/automation-case-studies) |
+| `N° 16` | **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate · State machine | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
+| `N° 17` | **TELEGRAM-RAG-SCRAPER** | Python / Telethon / ChromaDB / RAG | **Enterprise channel scraper** · 100% vector citation engine | [**View Code →**](https://github.com/therealfullmetal55555/telegram-rag-scraper) |
+| `N° 18` | **SMART-INBOX-AGENT** | n8n / FastAPI / Groq / Vision | **Zero-touch inbox triage** · Math-verified invoice parsing -> Sheets | [**View Code →**](https://github.com/therealfullmetal55555/smart-inbox-agent) |
 
 ---
 
