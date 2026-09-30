@@ -56,6 +56,7 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 
 | SYSTEM | TECH STACK | ARCHITECTURE & BUSINESS IMPACT | SOURCE |
 | :--- | :--- | :--- | :---: |
+| **N8N-LINT** | Node.js / CLI / GitHub Action / SARIF | **ESLint for n8n workflows** · 12 security rules, ungated write detection after LLMs, offline browser playground | [**View Code →**](https://github.com/therealfullmetal55555/n8n-lint) |
 | **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Database-enforced tenant isolation (PostgreSQL FORCE ROW LEVEL SECURITY, verified by tests that connect as the app role) | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
 | **OBSERVABILITY-STACK** | OpenTelemetry / Tempo / Prometheus / Grafana | **Agent Telemetry Stack** · RED metrics, trace-to-log correlation, 15 Prometheus alert rules & 5 dashboards | [**View Code →**](https://github.com/therealfullmetal55555/observability-stack) |
 | **INVOICE-AGENT** | Vision LLM / Pydantic v2 / Sheets | **98.6% field accuracy** · Multimodal OCR parsing, multi-currency validation, null-over-guessing guardrails | [**View Code →**](https://github.com/therealfullmetal55555/invoice-document-agent) |
@@ -64,11 +65,12 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 | **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate, draft generation, Telegram human-in-the-loop | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
 
 <details>
-<summary><b>📂 Expand to View Complete Specification Matrix (All 27 Systems)...</b></summary>
+<summary><b>📂 Expand to View Complete Specification Matrix (All 28 Systems)...</b></summary>
 <br/>
 
 | NO. | OBJECT | TECH STACK | PRIMARY METRIC / KEY ARCHITECTURE | SOURCE |
 | :--- | :--- | :--- | :--- | :---: |
+| `N° 00` | **N8N-LINT** | Node.js / CLI / GitHub Action / SARIF | **12 security rules · 72/72 tests** · Ungated LLM write detection · Web UI | [**View Code →**](https://github.com/therealfullmetal55555/n8n-lint) |
 | `N° 01` | **BREWCRAFT-CARE** | n8n / Qdrant / Gemini / Postgres | **20/20 acceptance tests** · Hybrid confidence gate · Injection shield | [**View Code →**](https://github.com/therealfullmetal55555/brewcraft-rag-support) |
 | `N° 02` | **WHATSAPP-RECEPTIONIST** | FastAPI / Twilio / Google Cal | **Timezone reconciliation** · Confirm-before-write state machine | [**View Code →**](https://github.com/therealfullmetal55555/whatsapp-ai-receptionist) |
 | `N° 03` | **INVOICE-AGENT** | Vision LLM / Pydantic v2 | **98.6% field accuracy** · Null-over-guessing guardrail · Sheets sync | [**View Code →**](https://github.com/therealfullmetal55555/invoice-document-agent) |
