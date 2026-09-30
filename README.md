@@ -43,6 +43,10 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 21` | **N8N-RESEARCH-AGENT** | n8n / Tavily / Gemini / ReAct | **8-call hard budget** · SSRF-safe fetcher · Citation truth guard | [**View Code →**](https://github.com/therealfullmetal55555/n8n-autonomous-research-agent) |
 | `N° 22` | **PREMIERE-FLOW-PRO** | CEP 11.0 / ExtendScript / PPRO | **27+ timeline automation modules** · BeatGrid BPM · Ken Burns | [**View Code →**](https://github.com/therealfullmetal55555/premiere-flow-pro) |
 | `N° 23` | **INDUSTRIAL-LOFI-PS** | CEP 12.0 / ScriptUI / Photoshop | **29+ ActionDescriptor FX recipes** · Thermal heatmap · Halftone · Noir | [**View Code →**](https://github.com/therealfullmetal55555/industrial-lofi-ps) |
+| `N° 24` | **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS backend** · Stripe webhook state machine · Tenant RLS isolation | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
+| `N° 25` | **OBSERVABILITY-STACK** | OpenTelemetry / Tempo / Prometheus / Grafana | **Agent telemetry stack** · RED metrics · Trace-to-log correlation · 15 alert rules | [**View Code →**](https://github.com/therealfullmetal55555/observability-stack) |
+| `N° 26` | **PASSMARK** | Python 3.11+ / NumPy / SciPy / Rich | **Empirical AI eval harness** · Paired diffs · McNemar test · Cohen's κ calibration | [**View Code →**](https://github.com/therealfullmetal55555/passmark) |
+| `N° 27` | **BENCH-SUITE** | Python 3.11+ / Pydantic v2 / JSONSchema | **172 tasks across 6 families** · Stratified scoring · Pareto frontier analysis | [**View Code →**](https://github.com/therealfullmetal55555/bench-suite) |
 
 ---
 
