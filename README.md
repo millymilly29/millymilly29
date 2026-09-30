@@ -1,22 +1,69 @@
 <div align="center">
-  <img src="assets/header.svg?v=55555" alt="Maison Margiela × Yeezy Software Archive — Kirill Tsyganov" width="100%">
+  <img src="assets/header.svg?v=55555" alt="Kirill Tsyganov — Software Archive" width="100%">
+  
+  <br/>
+  
+  # KIRILL TSYGANOV
+  ### **Production AI Agents · Enterprise RAG · Low-Latency Systems**
+  
+  [![Telegram](https://img.shields.io/badge/Telegram-@therealfullmetal-2BA2E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/therealfullmetal)
+  [![Status](https://img.shields.io/badge/Status-Open_to_Work_%2F_Freelance-000000?style=flat-square)](https://t.me/therealfullmetal)
+  [![Location](https://img.shields.io/badge/Location-Tallinn_%2F_Europe_%2F_Remote-lightgrey?style=flat-square)](https://t.me/therealfullmetal)
+  [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+
+  <p align="center">
+    <a href="https://t.me/therealfullmetal"><b>💬 Direct Chat on Telegram</b></a> •
+    <a href="#-flagship-systems"><b>⚡ Flagship Systems</b></a> •
+    <a href="#-curated-specification-matrix"><b>📊 All 27 Projects</b></a> •
+    <a href="#-work-with-me"><b>💼 Services & Work with Me</b></a>
+  </p>
 </div>
-
-```
-KIRILL TSYGANOV // SOFTWARE ARCHIVE
-AI AUTOMATION · PRODUCTION AGENTS · LOW-LATENCY SYSTEMS
-```
-
-Systems & AI Automation engineer building autonomous tool-calling agents, multimodal vision pipelines, enterprise RAG systems, and in-memory databases. Zero framework bloat. Strict token economics. Empirical benchmarks.
-
-```
-[ SPECIFICATION TAGS ]
-[ STATUS — ACTIVE ARCHIVE ]   [ RUNTIME — PYTHON 3.11+ / NODE V22 / FASTAPI ]   [ ARCH — MEASURED METRICS ]
-```
 
 ---
 
-### [ CURATED SPECIFICATION MATRIX ]
+### ⚡ [ FLAGSHIP SYSTEMS ]
+
+```
+PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
+```
+
+#### 01 // [SYNAPSE](https://github.com/therealfullmetal55555/synapse) — In-Memory HNSW Vector Database
+> **Sub-millisecond vector indexing & hybrid search without external container bloat.**
+* **The Problem:** Production agent loops degrade in speed when querying heavy cloud vector databases for short-term and conversational memory.
+* **The Solution:** Pure JavaScript in-memory HNSW skip-graph indexer with `Float64Array` storage, hybrid BM25 lexical search, and zero dependencies.
+* **Measured Metric:** `0.245ms P50 latency` · `99.1% Recall@10` · Instant cold-start on edge runtime.
+* 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/synapse)**
+
+#### 02 // [AGENT-FIREWALL](https://github.com/therealfullmetal55555/agent-firewall) — Autonomous Agent Execution Sandbox
+> **Deterministic AST threat gateway & command-pattern firewall for AI agent tool execution.**
+* **The Problem:** Autonomous LLM agents with bash/tool access can generate dangerous commands (`rm -rf`, curl-pipe-sh, data exfiltration) when prompt-injected.
+* **The Solution:** AST syntax tree scanner, strict parameter boundary enforcement, dry-run sandbox simulation, and cryptographically linked SHA-256 audit logs.
+* **Measured Metric:** 100% deterministic command validation prior to OS execution · Zero unverified shell execution.
+* 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/agent-firewall)**
+
+#### 03 // [PASSMARK](https://github.com/therealfullmetal55555/passmark) & [BENCH-SUITE](https://github.com/therealfullmetal55555/bench-suite) — Statistical AI Evaluation Engine
+> **Empirical AI evaluation harness & 172-task benchmark suite eliminating subjective vibe-checks.**
+* **The Problem:** Prompts and agents are typically evaluated with arbitrary single-number averages without statistical significance testing.
+* **The Solution:** Paired McNemar significance testing ($p < 0.05$), Cohen’s $\kappa = 0.718$ LLM-as-a-Judge calibration, and multi-objective Pareto Frontier analysis (Accuracy vs Latency vs Token Cost) across 6 core agent task families.
+* **Measured Metric:** 172 curated tasks · 477 automated tests (100% pass) · Mathematical proof of improvement.
+* 🔗 **[View PASSMARK →](https://github.com/therealfullmetal55555/passmark)** · **[View BENCH-SUITE →](https://github.com/therealfullmetal55555/bench-suite)**
+
+---
+
+### 📦 [ CURATED PRODUCTION HIGHLIGHTS ]
+
+| SYSTEM | TECH STACK | ARCHITECTURE & BUSINESS IMPACT | SOURCE |
+| :--- | :--- | :--- | :---: |
+| **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Hardware-level PostgreSQL RLS data isolation · Stripe webhook FSM | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
+| **OBSERVABILITY-STACK** | OpenTelemetry / Tempo / Prometheus / Grafana | **Agent Telemetry Stack** · RED metrics, trace-to-log correlation, 15 Prometheus alert rules & 5 dashboards | [**View Code →**](https://github.com/therealfullmetal55555/observability-stack) |
+| **INVOICE-AGENT** | Vision LLM / Pydantic v2 / Sheets | **98.6% field accuracy** · Multimodal OCR parsing, multi-currency validation, null-over-guessing guardrails | [**View Code →**](https://github.com/therealfullmetal55555/invoice-document-agent) |
+| **BREWCRAFT-CARE** | n8n / Qdrant / Gemini / Postgres | **20/20 acceptance pass** · Grounded RAG support desk, hybrid confidence gate, human handoff | [**View Code →**](https://github.com/therealfullmetal55555/brewcraft-rag-support) |
+| **WHATSAPP-RECEPTIONIST** | FastAPI / Twilio / Google Cal | **Timezone reconciliation** · Confirm-before-write appointment state machine, zero booking conflicts | [**View Code →**](https://github.com/therealfullmetal55555/whatsapp-ai-receptionist) |
+| **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate, draft generation, Telegram human-in-the-loop | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
+
+<details>
+<summary><b>📂 Expand to View Complete Specification Matrix (All 27 Systems)...</b></summary>
+<br/>
 
 | NO. | OBJECT | TECH STACK | PRIMARY METRIC / KEY ARCHITECTURE | SOURCE |
 | :--- | :--- | :--- | :--- | :---: |
@@ -34,7 +81,7 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 12` | **MILLY-FX-PRO** | CEP 11+ / ExtendScript / AE | **26+ procedural FX modules** · 7 one-click master recipes | [**View Code →**](https://github.com/therealfullmetal55555/millyfx-pro) |
 | `N° 13` | **AGENT-FIREWALL** | Node / AST Command Scanner | Deterministic dry-run safety gateway · **SHA-256 audit chain** | [**View Code →**](https://github.com/therealfullmetal55555/agent-firewall) |
 | `N° 14` | **SYNAPSE** | Node / Browser JS (Zero-Dep) | `0.245ms P50` in-memory HNSW vector database · `99.1% Recall` | [**View Code →**](https://github.com/therealfullmetal55555/synapse) |
-| `N° 15` | **CASE-STUDIES** | Python / APScheduler / Sheets | E-commerce automation · **~77% time reduction (~27h/mo)** | [**View Details →**](https://github.com/therealfullmetal55555/automation-case-studies) |
+| `N° 15` | **CASE-STUDIES** | Python / APScheduler / Sheets | E-commerce automation · **~77% time reduction (~27h/mo saved)** | [**View Details →**](https://github.com/therealfullmetal55555/automation-case-studies) |
 | `N° 16` | **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate · State machine | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
 | `N° 17` | **TELEGRAM-RAG-SCRAPER** | Python / Telethon / ChromaDB / RAG | **Enterprise channel scraper** · 100% vector citation engine | [**View Code →**](https://github.com/therealfullmetal55555/telegram-rag-scraper) |
 | `N° 18` | **SMART-INBOX-AGENT** | n8n / FastAPI / Groq / Vision | **Zero-touch inbox triage** · Math-verified invoice parsing -> Sheets | [**View Code →**](https://github.com/therealfullmetal55555/smart-inbox-agent) |
@@ -48,23 +95,37 @@ Systems & AI Automation engineer building autonomous tool-calling agents, multim
 | `N° 26` | **PASSMARK** | Python 3.11+ / NumPy / SciPy / Rich | **Empirical AI eval harness** · Paired diffs · McNemar test · Cohen's κ calibration | [**View Code →**](https://github.com/therealfullmetal55555/passmark) |
 | `N° 27` | **BENCH-SUITE** | Python 3.11+ / Pydantic v2 / JSONSchema | **172 tasks across 6 families** · Stratified scoring · Pareto frontier analysis | [**View Code →**](https://github.com/therealfullmetal55555/bench-suite) |
 
----
-
-### [ CORE STACK ]
-
-```
-AI & ORCHESTRATION    n8n (Docker), Qdrant, LlamaIndex, LangChain, Google Gemini, OpenAI (GPT-4o / Vision), ChromaDB
-WORKFLOWS & CRM       HubSpot API v3, Airtable, Google Calendar / Sheets API v4, Twilio WhatsApp, aiogram 3.x, Playwright
-SYSTEMS & STORAGE     PostgreSQL 16, In-Memory DBs, TypedArrays (Float64Array), SQLite, HNSW Graph, AST Command Scanners
-```
+</details>
 
 ---
 
-```
-GARMENT CARE / CONTACT
-LOCATION      Europe / Remote
-TELEGRAM      @therealfullmetal
-EMAIL         millyrock2900@gmail.com
-LINKEDIN      https://linkedin.com/in/kirill-tsyganov-a8681241a
-CARE          DO NOT BLEACH · DRY FLAT · 100% RAW CODE
-```
+### 💼 [ WORK WITH ME ]
+
+I help engineering teams, startups, and businesses build **reliable AI systems that run in production without hallucinations, runaway token costs, or data leaks**.
+
+#### What I Build:
+1. **Autonomous AI Agents & Tool-Calling Workflows** (FastAPI, n8n, LangChain, Playwright) — structured data extraction, CRM sync, customer support with human-in-the-loop.
+2. **Enterprise RAG & Grounded Search** (Qdrant, ChromaDB, LlamaIndex) — strict citation verification, closed-book guardrails, sub-second latency.
+3. **AI Safety, Firewalls & Sandboxing** (AST analysis, input sanitization, rate-limiting, audit logging).
+4. **Custom Backend & Automation Engines** (PostgreSQL RLS, Stripe state machines, OpenTelemetry observability).
+
+#### Engagement Format:
+* **Rapid Prototyping:** Working MVP with unit tests in 5–7 business days.
+* **Production Deployment:** Full Docker / Kubernetes infrastructure with CI/CD and observability.
+* **Direct Communication:** Daily asynchronous updates + Telegram channel.
+
+👉 **Ready to automate your operations? Reach out directly:**
+* **Telegram:** [@therealfullmetal](https://t.me/therealfullmetal)
+* **LinkedIn:** [Kirill Tsyganov](https://linkedin.com/in/kirill-tsyganov-a8681241a)
+* **Email:** `millyrock2900 [at] gmail.com`
+
+---
+
+### 🇷🇺 [ ДЛЯ РУССКОЯЗЫЧНЫХ КЛИЕНТОВ / СНГ ]
+
+Разрабатываю **производственные AI-агенты, RAG-системы и комплексную автоматизацию бизнес-процессов под ключ**:
+* **Автономные агенты без галлюцинаций:** квалификация лидов в CRM (AmoCRM, HubSpot), умная сортировка входящих писем и счетов, боты поддержки с контролем точности.
+* **Автоматизация e-commerce и маркетинга:** мониторинг цен маркетплейсов (Wildberries / Ozon), кросспостинг контента, сквозная аналитика.
+* **Индивидуальные бэкенд-решения:** интеграции Telegram/WhatsApp, вебхуки, биллинг, базы данных с изоляцией тенантов.
+
+💬 **Обсудить задачу или получить консультацию:** [**Написать в Telegram (@therealfullmetal)**](https://t.me/therealfullmetal)
