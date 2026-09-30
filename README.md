@@ -81,7 +81,7 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 | `N° 10` | **N8N-LEADGEN** | n8n / Docker / GPT-4o-mini | `$0.057 / 1K leads` · 13-node scraper & heuristic pitch generator | [**View Code →**](https://github.com/therealfullmetal55555/n8n-ai-leadgen-outreach) |
 | `N° 11` | **N8N-ASSISTANT** | n8n / LangChain / GPT-4o | Multi-tool agent · **Confirm-Before-Write** safety gate | [**View Code →**](https://github.com/therealfullmetal55555/n8n-ai-executive-assistant) |
 | `N° 12` | **MILLY-FX-PRO** | CEP 11+ / ExtendScript / AE | **26+ procedural FX modules** · 7 one-click master recipes | [**View Code →**](https://github.com/therealfullmetal55555/millyfx-pro) |
-| `N° 13` | **AGENT-FIREWALL** | Node / AST Command Scanner | Deterministic dry-run safety gateway · **SHA-256 audit chain** | [**View Code →**](https://github.com/therealfullmetal55555/agent-firewall) |
+| `N° 13` | **AGENT-FIREWALL** | Node / Regex Command Scanner | Deterministic dry-run safety gateway · **SHA-256 audit chain** | [**View Code →**](https://github.com/therealfullmetal55555/agent-firewall) |
 | `N° 14` | **SYNAPSE** | Node / Browser JS (Zero-Dep) | `0.245ms P50` in-memory HNSW vector database · `99.1% Recall` | [**View Code →**](https://github.com/therealfullmetal55555/synapse) |
 | `N° 15` | **CASE-STUDIES** | Python / APScheduler / Sheets | E-commerce automation · **~77% time reduction (~27h/mo saved)** | [**View Details →**](https://github.com/therealfullmetal55555/automation-case-studies) |
 | `N° 16` | **CONTENT-QA-PIPELINE** | n8n / Groq / OpenAI / HITL | **Multi-agent writer** · Anti-cliché reviewer gate · State machine | [**View Code →**](https://github.com/therealfullmetal55555/content-qa-pipeline) |
