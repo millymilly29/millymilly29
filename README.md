@@ -31,21 +31,21 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 > **Sub-millisecond vector indexing & hybrid search without external container bloat.**
 * **The Problem:** Production agent loops degrade in speed when querying heavy cloud vector databases for short-term and conversational memory.
 * **The Solution:** Pure JavaScript in-memory HNSW skip-graph indexer with `Float64Array` storage, hybrid BM25 lexical search, and zero dependencies.
-* **Measured Metric:** `0.245ms P50 latency` · `99.1% Recall@10` · Instant cold-start on edge runtime.
+* **Measured Metric:** `0.245ms P50 latency` · `99.1% Recall@10 at N=500` (`80.6% at N=5000`) · Instant cold-start on edge runtime (reproduce via `node tests/audit-benchmark.js`).
 * 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/synapse)**
 
 #### 02 // [AGENT-FIREWALL](https://github.com/therealfullmetal55555/agent-firewall) — Autonomous Agent Execution Sandbox
 > **Deterministic AST threat gateway & command-pattern firewall for AI agent tool execution.**
 * **The Problem:** Autonomous LLM agents with bash/tool access can generate dangerous commands (`rm -rf`, curl-pipe-sh, data exfiltration) when prompt-injected.
 * **The Solution:** AST syntax tree scanner, strict parameter boundary enforcement, dry-run sandbox simulation, and cryptographically linked SHA-256 audit logs.
-* **Measured Metric:** 100% deterministic command validation prior to OS execution · Zero unverified shell execution.
+* **Measured Metric:** Blocks 12+ classes of dangerous shell patterns · 15/15 security test suites pass (reproduce via `npm test`).
 * 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/agent-firewall)**
 
 #### 03 // [PASSMARK](https://github.com/therealfullmetal55555/passmark) & [BENCH-SUITE](https://github.com/therealfullmetal55555/bench-suite) — Statistical AI Evaluation Engine
 > **Empirical AI evaluation harness & 172-task benchmark suite eliminating subjective vibe-checks.**
 * **The Problem:** Prompts and agents are typically evaluated with arbitrary single-number averages without statistical significance testing.
 * **The Solution:** Paired McNemar significance testing ($p < 0.05$), Cohen’s $\kappa = 0.718$ LLM-as-a-Judge calibration, and multi-objective Pareto Frontier analysis (Accuracy vs Latency vs Token Cost) across 6 core agent task families.
-* **Measured Metric:** 172 curated tasks · 477 automated tests (100% pass) · Mathematical proof of improvement.
+* **Measured Metric:** 172 curated tasks · 477 automated tests (100% pass) · Statistically verified candidate improvements (reproduce via `pytest -v` or `python3 simulate_pipeline.py`).
 * 🔗 **[View PASSMARK →](https://github.com/therealfullmetal55555/passmark)** · **[View BENCH-SUITE →](https://github.com/therealfullmetal55555/bench-suite)**
 
 ---
@@ -54,7 +54,7 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 
 | SYSTEM | TECH STACK | ARCHITECTURE & BUSINESS IMPACT | SOURCE |
 | :--- | :--- | :--- | :---: |
-| **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Hardware-level PostgreSQL RLS data isolation · Stripe webhook FSM | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
+| **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Database-level PostgreSQL Row-Level Security (RLS) isolation · Stripe webhook FSM | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
 | **OBSERVABILITY-STACK** | OpenTelemetry / Tempo / Prometheus / Grafana | **Agent Telemetry Stack** · RED metrics, trace-to-log correlation, 15 Prometheus alert rules & 5 dashboards | [**View Code →**](https://github.com/therealfullmetal55555/observability-stack) |
 | **INVOICE-AGENT** | Vision LLM / Pydantic v2 / Sheets | **98.6% field accuracy** · Multimodal OCR parsing, multi-currency validation, null-over-guessing guardrails | [**View Code →**](https://github.com/therealfullmetal55555/invoice-document-agent) |
 | **BREWCRAFT-CARE** | n8n / Qdrant / Gemini / Postgres | **20/20 acceptance pass** · Grounded RAG support desk, hybrid confidence gate, human handoff | [**View Code →**](https://github.com/therealfullmetal55555/brewcraft-rag-support) |
