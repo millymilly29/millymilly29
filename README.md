@@ -6,6 +6,8 @@
   # KIRILL TSYGANOV
   ### **Production AI Agents · Enterprise RAG · Low-Latency Systems**
   
+  > **I build AI agents that say "I don't know" instead of making things up.**
+  
   [![Telegram](https://img.shields.io/badge/Telegram-@therealfullmetal-2BA2E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/therealfullmetal)
   [![Status](https://img.shields.io/badge/Status-Open_to_Work_%2F_Freelance-000000?style=flat-square)](https://t.me/therealfullmetal)
   [![Location](https://img.shields.io/badge/Location-Tallinn_%2F_Europe_%2F_Remote-lightgrey?style=flat-square)](https://t.me/therealfullmetal)
@@ -31,21 +33,21 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 > **Sub-millisecond vector indexing & hybrid search without external container bloat.**
 * **The Problem:** Production agent loops degrade in speed when querying heavy cloud vector databases for short-term and conversational memory.
 * **The Solution:** Pure JavaScript in-memory HNSW skip-graph indexer with `Float64Array` storage, hybrid BM25 lexical search, and zero dependencies.
-* **Measured Metric:** `0.245ms P50 latency` · `99.1% Recall@10 at N=500` (`80.6% at N=5000`) · Instant cold-start on edge runtime (reproduce via `node tests/audit-benchmark.js`).
+* **Measured Metric:** Recall@10 98.5% at N=500 → 78.8% at N=5,000 on default settings (random 64-d vectors, brute-force ground truth); P50 0.3–0.9 ms. Tunable via `efSearch` (98.0% recall at `efSearch=128`): see the recall/latency curve in the repo.
 * 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/synapse)**
 
 #### 02 // [AGENT-FIREWALL](https://github.com/therealfullmetal55555/agent-firewall) — Autonomous Agent Execution Sandbox
-> **Deterministic AST threat gateway & command-pattern firewall for AI agent tool execution.**
+> **A first-line command gate for AI agents: regex rules, risk policies, dry-run rewrite, tamper-evident audit log.**
 * **The Problem:** Autonomous LLM agents with bash/tool access can generate dangerous commands (`rm -rf`, curl-pipe-sh, data exfiltration) when prompt-injected.
-* **The Solution:** AST syntax tree scanner, strict parameter boundary enforcement, dry-run sandbox simulation, and cryptographically linked SHA-256 audit logs.
-* **Measured Metric:** Blocks 12+ classes of dangerous shell patterns · 15/15 security test suites pass (reproduce via `npm test`).
+* **The Solution:** 10 threat rules (rm -rf, .env exfiltration, cloud IMDS, curl|bash, reverse shells…), 4 policy profiles (PARANOID / STRICT_CI / AIRGAPPED / DEVELOPMENT), automatic dry-run rewrite and a SHA-256 hash-chained audit log.
+* **Measured Metric:** 10 rules · 4 policies · 13 tests, including checks for known bypasses (base64, variable indirection) and cryptographic hash chain verification. Zero dependencies. Meant to sit in front of an OS-level sandbox, not replace it.
 * 🔗 **[Explore Repository & Architecture →](https://github.com/therealfullmetal55555/agent-firewall)**
 
 #### 03 // [PASSMARK](https://github.com/therealfullmetal55555/passmark) & [BENCH-SUITE](https://github.com/therealfullmetal55555/bench-suite) — Statistical AI Evaluation Engine
 > **Empirical AI evaluation harness & 172-task benchmark suite eliminating subjective vibe-checks.**
 * **The Problem:** Prompts and agents are typically evaluated with arbitrary single-number averages without statistical significance testing.
 * **The Solution:** Paired McNemar significance testing ($p < 0.05$), Cohen’s $\kappa = 0.718$ LLM-as-a-Judge calibration, and multi-objective Pareto Frontier analysis (Accuracy vs Latency vs Token Cost) across 6 core agent task families.
-* **Measured Metric:** 172 curated tasks · 477 automated tests (100% pass) · Statistically verified candidate improvements (reproduce via `pytest -v` or `python3 simulate_pipeline.py`).
+* **Measured Metric:** 172 curated tasks · 477 automated tests (100% pass) · Statistical evidence, not vibes: paired McNemar test + bootstrap CIs (reproduce via `pytest -v` or `python3 simulate_pipeline.py`).
 * 🔗 **[View PASSMARK →](https://github.com/therealfullmetal55555/passmark)** · **[View BENCH-SUITE →](https://github.com/therealfullmetal55555/bench-suite)**
 
 ---
@@ -54,7 +56,7 @@ PROOF OF ARCHITECTURE · DETERMINISTIC GUARDRAILS · MEASURED METRICS
 
 | SYSTEM | TECH STACK | ARCHITECTURE & BUSINESS IMPACT | SOURCE |
 | :--- | :--- | :--- | :---: |
-| **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Database-level PostgreSQL Row-Level Security (RLS) isolation · Stripe webhook FSM | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
+| **WORKBENCH** | FastAPI / Postgres RLS / Stripe / Celery | **Multi-tenant SaaS foundation** · Database-enforced tenant isolation (PostgreSQL FORCE ROW LEVEL SECURITY, verified by tests that connect as the app role) | [**View Code →**](https://github.com/therealfullmetal55555/workbench) |
 | **OBSERVABILITY-STACK** | OpenTelemetry / Tempo / Prometheus / Grafana | **Agent Telemetry Stack** · RED metrics, trace-to-log correlation, 15 Prometheus alert rules & 5 dashboards | [**View Code →**](https://github.com/therealfullmetal55555/observability-stack) |
 | **INVOICE-AGENT** | Vision LLM / Pydantic v2 / Sheets | **98.6% field accuracy** · Multimodal OCR parsing, multi-currency validation, null-over-guessing guardrails | [**View Code →**](https://github.com/therealfullmetal55555/invoice-document-agent) |
 | **BREWCRAFT-CARE** | n8n / Qdrant / Gemini / Postgres | **20/20 acceptance pass** · Grounded RAG support desk, hybrid confidence gate, human handoff | [**View Code →**](https://github.com/therealfullmetal55555/brewcraft-rag-support) |
@@ -106,12 +108,12 @@ I help engineering teams, startups, and businesses build **reliable AI systems t
 #### What I Build:
 1. **Autonomous AI Agents & Tool-Calling Workflows** (FastAPI, n8n, LangChain, Playwright) — structured data extraction, CRM sync, customer support with human-in-the-loop.
 2. **Enterprise RAG & Grounded Search** (Qdrant, ChromaDB, LlamaIndex) — strict citation verification, closed-book guardrails, sub-second latency.
-3. **AI Safety, Firewalls & Sandboxing** (AST analysis, input sanitization, rate-limiting, audit logging).
+3. **AI Safety, Firewalls & Sandboxing** (command-pattern scanning, input sanitization, rate-limiting, tamper-evident audit logging).
 4. **Custom Backend & Automation Engines** (PostgreSQL RLS, Stripe state machines, OpenTelemetry observability).
 
 #### Engagement Format:
 * **Rapid Prototyping:** Working MVP with unit tests in 5–7 business days.
-* **Production Deployment:** Full Docker / Kubernetes infrastructure with CI/CD and observability.
+* **Production Deployment:** Full Docker Compose / CI/CD and observability.
 * **Direct Communication:** Daily asynchronous updates + Telegram channel.
 
 👉 **Ready to automate your operations? Reach out directly:**
